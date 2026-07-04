@@ -16,6 +16,12 @@
     <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
+    <!-- Swiper CSS -->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
     <!-- Custom Tailwind Configuration for Soft/Nude colors & Dark Mode -->
     <script>
         tailwind.config = {
@@ -233,132 +239,143 @@
                 <p class="text-nude-600 dark:text-slate-400 max-w-2xl mx-auto font-medium">Here are some of the projects I have handled.</p>
             </div>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-4">
+            <div class="swiper projectSwiper p-4">
+
+                <div class="swiper-wrapper">
                 
-                <!-- Project Card 1 -->
-                <a href="#" class="group soft-card block overflow-hidden p-3 relative min-h-[540px] flex flex-col">
+                    <!-- Project Card 1 -->
+                    <div class="swiper-slide">
+                        <a href="#" class="group soft-card block overflow-hidden p-3 relative min-h-[540px] flex flex-col">
 
-                    <div class="absolute top-4 right-4 z-10 bg-white/80 dark:bg-black/50 backdrop-blur-sm p-2 rounded-full text-nude-500 dark:text-nude-300 opacity-0 group-hover:opacity-100 transition-opacity">
-                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            <div class="absolute top-4 right-4 z-10 bg-white/80 dark:bg-black/50 backdrop-blur-sm p-2 rounded-full text-nude-500 dark:text-nude-300 opacity-0 group-hover:opacity-100 transition-opacity">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </div>
+
+                            <!-- Image -->
+                            <div class="h-56 rounded-[1rem] overflow-hidden bg-slate-100 dark:bg-darknude-surface mb-4">
+                                <img
+                                    src="assets/images/stip_register.png"
+                                    alt="STIP Register"
+                                    class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-110"
+                                />
+                            </div>
+
+                            <!-- Content -->
+                            <div class="flex flex-col flex-1 px-3 pb-3">
+
+                                <h3 class="text-xl font-bold text-nude-800 dark:text-nude-100 mb-2 group-hover:text-nude-500 transition-colors">
+                                    STIP 🏫
+                                </h3>
+
+                                <p class="text-slate-500 dark:text-slate-400 text-sm font-medium leading-relaxed flex-1">
+                                    A web-based platform that streamlines academic and administrative processes at STIP. It includes modules for registration, cadet admissions (SiPencatar), master's program management, and asset management.
+                                </p>
+
+                                <div class="flex flex-wrap gap-2 mt-5">
+                                    <span class="px-3 py-1 bg-accent-blue/30 dark:bg-accent-blue/10 text-blue-700 dark:text-blue-300 text-xs font-bold rounded-full">
+                                        React
+                                    </span>
+
+                                    <span class="px-3 py-1 bg-accent-green/30 dark:bg-accent-green/10 text-green-700 dark:text-green-300 text-xs font-bold rounded-full">
+                                        Cypress
+                                    </span>
+                                </div>
+
+                            </div>
+
+                        </a>
                     </div>
 
-                    <!-- Image -->
-                    <div class="h-56 rounded-[1rem] overflow-hidden bg-slate-100 dark:bg-darknude-surface mb-4">
-                        <img
-                            src="assets/images/stip_register.png"
-                            alt="STIP Register"
-                            class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-110"
-                        />
+                    <!-- Project Card 2 -->
+                    <div class="swiper-slide">
+                        <a href="#" class="group soft-card block overflow-hidden p-3 relative min-h-[540px] flex flex-col">
+
+                            <div class="absolute top-4 right-4 z-10 bg-white/80 dark:bg-black/50 backdrop-blur-sm p-2 rounded-full text-nude-500 dark:text-nude-300 opacity-0 group-hover:opacity-100 transition-opacity">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </div>
+
+                            <!-- Image -->
+                            <div class="h-56 rounded-[1rem] overflow-hidden bg-slate-100 dark:bg-darknude-surface mb-4">
+                                <img
+                                    src="assets/images/petrokimia.png"
+                                    alt="Petrokimia Gresik"
+                                    class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-110"
+                                />
+                            </div>
+
+                            <!-- Content -->
+                            <div class="flex flex-col flex-1 px-3 pb-3">
+
+                                <h3 class="text-xl font-bold text-nude-800 dark:text-nude-100 mb-2 group-hover:text-nude-500 transition-colors">
+                                    PT Petrokimia Gresik 🌱
+                                </h3>
+
+                                <p class="text-slate-500 dark:text-slate-400 text-sm font-medium leading-relaxed flex-1">
+                                    Experienced in handling enterprise application projects for PT Petrokimia Gresik, a subsidiary of PT Pupuk Indonesia (Persero). 
+                                    Worked on multiple systems, including Job Tender, PTS, SUMON, RMP, EHRD, Petrostar, Dashboard, PFC, SUPER, ORNAMEN, HCDEV, and SERGIO.
+                                </p>
+
+                                <div class="flex flex-wrap gap-2 mt-5">
+                                    <span class="px-3 py-1 bg-accent-pink/30 dark:bg-accent-pink/10 text-pink-700 dark:text-pink-300 text-xs font-bold rounded-full">
+                                        Laravel
+                                    </span>
+
+                                    <span class="px-3 py-1 bg-nude-300/30 dark:bg-nude-700/30 text-nude-800 dark:text-nude-300 text-xs font-bold rounded-full">
+                                        Postman
+                                    </span>
+                                </div>
+
+                            </div>
+
+                        </a>
                     </div>
 
-                    <!-- Content -->
-                    <div class="flex flex-col flex-1 px-3 pb-3">
+                    <!-- Project Card 3 -->
+                    <div class="swiper-slide">
+                        <a href="#" class="group soft-card block overflow-hidden p-3 relative min-h-[540px] flex flex-col">
 
-                        <h3 class="text-xl font-bold text-nude-800 dark:text-nude-100 mb-2 group-hover:text-nude-500 transition-colors">
-                            STIP 🏫
-                        </h3>
+                            <div class="absolute top-4 right-4 z-10 bg-white/80 dark:bg-black/50 backdrop-blur-sm p-2 rounded-full text-nude-500 dark:text-nude-300 opacity-0 group-hover:opacity-100 transition-opacity">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </div>
 
-                        <p class="text-slate-500 dark:text-slate-400 text-sm font-medium leading-relaxed flex-1">
-                            A web-based platform that streamlines academic and administrative processes at STIP. It includes modules for registration, cadet admissions (SiPencatar), master's program management, and asset management.
-                        </p>
+                            <!-- Image -->
+                            <div class="h-56 rounded-[1rem] overflow-hidden bg-slate-100 dark:bg-darknude-surface mb-4">
+                                <img
+                                    src="assets/images/pln_prima.png"
+                                    alt="PLN"
+                                    class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-110"
+                                />
+                            </div>
 
-                        <div class="flex flex-wrap gap-2 mt-5">
-                            <span class="px-3 py-1 bg-accent-blue/30 dark:bg-accent-blue/10 text-blue-700 dark:text-blue-300 text-xs font-bold rounded-full">
-                                React
-                            </span>
+                            <!-- Content -->
+                            <div class="flex flex-col flex-1 px-3 pb-3">
 
-                            <span class="px-3 py-1 bg-accent-green/30 dark:bg-accent-green/10 text-green-700 dark:text-green-300 text-xs font-bold rounded-full">
-                                Cypress
-                            </span>
-                        </div>
+                                <h3 class="text-xl font-bold text-nude-800 dark:text-nude-100 mb-2 group-hover:text-nude-500 transition-colors">
+                                    PT PLN Persero ⚡
+                                </h3>
 
+                                <p class="text-slate-500 dark:text-slate-400 text-sm font-medium leading-relaxed flex-1">
+                                    Developed and tested a Desktop & Mobile Investment Recommendation System for PT PLN (Persero) to support investment planning for new connections, 
+                                    power upgrades, and maintenance based on customer demand and power capacity.
+                                </p>
+
+                                <div class="flex flex-wrap gap-2 mt-5">
+                                    <span class="px-3 py-1 bg-accent-yellow/30 dark:bg-accent-yellow/10 text-yellow-700 dark:text-yellow-300 text-xs font-bold rounded-full">
+                                        Vue.js
+                                    </span>
+
+                                    <span class="px-3 py-1 bg-purple-200/50 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 text-xs font-bold rounded-full">
+                                        Selenium
+                                    </span>
+                                </div>
+
+                            </div>
+
+                        </a>
                     </div>
+                </div>
 
-                </a>
-
-                <!-- Project Card 2 -->
-                <a href="#" class="group soft-card block overflow-hidden p-3 relative min-h-[540px] flex flex-col">
-
-                    <div class="absolute top-4 right-4 z-10 bg-white/80 dark:bg-black/50 backdrop-blur-sm p-2 rounded-full text-nude-500 dark:text-nude-300 opacity-0 group-hover:opacity-100 transition-opacity">
-                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                    </div>
-
-                    <!-- Image -->
-                    <div class="h-56 rounded-[1rem] overflow-hidden bg-slate-100 dark:bg-darknude-surface mb-4">
-                        <img
-                            src="assets/images/petrokimia.png"
-                            alt="Petrokimia Gresik"
-                            class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-110"
-                        />
-                    </div>
-
-                    <!-- Content -->
-                    <div class="flex flex-col flex-1 px-3 pb-3">
-
-                        <h3 class="text-xl font-bold text-nude-800 dark:text-nude-100 mb-2 group-hover:text-nude-500 transition-colors">
-                            PT Petrokimia Gresik 🌱
-                        </h3>
-
-                        <p class="text-slate-500 dark:text-slate-400 text-sm font-medium leading-relaxed flex-1">
-                            Experienced in handling enterprise application projects for PT Petrokimia Gresik, a subsidiary of PT Pupuk Indonesia (Persero). 
-                            Worked on multiple systems, including Job Tender, PTS, SUMON, RMP, EHRD, Petrostar, Dashboard, PFC, SUPER, ORNAMEN, HCDEV, and SERGIO, contributing to requirements analysis, system testing, and quality assurance.
-                        </p>
-
-                        <div class="flex flex-wrap gap-2 mt-5">
-                            <span class="px-3 py-1 bg-accent-pink/30 dark:bg-accent-pink/10 text-pink-700 dark:text-pink-300 text-xs font-bold rounded-full">
-                                Laravel
-                            </span>
-
-                            <span class="px-3 py-1 bg-nude-300/30 dark:bg-nude-700/30 text-nude-800 dark:text-nude-300 text-xs font-bold rounded-full">
-                                Postman
-                            </span>
-                        </div>
-
-                    </div>
-
-                </a>
-
-                <!-- Project Card 3 -->
-                <a href="#" class="group soft-card block overflow-hidden p-3 relative min-h-[540px] flex flex-col">
-
-                    <div class="absolute top-4 right-4 z-10 bg-white/80 dark:bg-black/50 backdrop-blur-sm p-2 rounded-full text-nude-500 dark:text-nude-300 opacity-0 group-hover:opacity-100 transition-opacity">
-                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                    </div>
-
-                    <!-- Image -->
-                    <div class="h-56 rounded-[1rem] overflow-hidden bg-slate-100 dark:bg-darknude-surface mb-4">
-                        <img
-                            src="assets/images/pln_prima.png"
-                            alt="PLN"
-                            class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-110"
-                        />
-                    </div>
-
-                    <!-- Content -->
-                    <div class="flex flex-col flex-1 px-3 pb-3">
-
-                        <h3 class="text-xl font-bold text-nude-800 dark:text-nude-100 mb-2 group-hover:text-nude-500 transition-colors">
-                            PT Perusahaan Listrik Negara ⚡
-                        </h3>
-
-                        <p class="text-slate-500 dark:text-slate-400 text-sm font-medium leading-relaxed flex-1">
-                            Developed and tested a Desktop & Mobile Investment Recommendation System for PT PLN (Persero) to support investment planning for new connections, 
-                            power upgrades, and maintenance based on customer demand and power capacity.
-                        </p>
-
-                        <div class="flex flex-wrap gap-2 mt-5">
-                            <span class="px-3 py-1 bg-accent-yellow/30 dark:bg-accent-yellow/10 text-yellow-700 dark:text-yellow-300 text-xs font-bold rounded-full">
-                                Vue.js
-                            </span>
-
-                            <span class="px-3 py-1 bg-purple-200/50 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 text-xs font-bold rounded-full">
-                                Selenium
-                            </span>
-                        </div>
-
-                    </div>
-
-                </a>
+                <div class="swiper-pagination mt-8"></div>
 
             </div>
         </div>
@@ -569,6 +586,43 @@
                 themeIcon.classList.replace('fa-sun', 'fa-moon');
             }
         });
+
+        // --- Project Slider ---
+        const swiper = new Swiper(".projectSwiper", {
+
+            slidesPerView: 1,
+
+            spaceBetween: 30,
+
+            grabCursor: true,
+
+            loop: true,
+
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+
+            breakpoints: {
+
+                640: {
+                    slidesPerView: 1,
+                },
+
+                768: {
+                    slidesPerView: 2,
+                },
+
+                1200: {
+                    slidesPerView: 3,
+                }
+
+            }
+
+        });
     </script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 </body>
 </html>
