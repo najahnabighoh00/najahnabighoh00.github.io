@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Portfolio</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Copy Tailwind Config dari index.html -->
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Quicksand', 'sans-serif'],
+                    },
+                    colors: {
+                        nude: {
+                            50: '#fff6f0',
+                            100: '#fcebe0',
+                            200: '#f9dcc8',
+                            300: '#f5c6ab',
+                            400: '#efab87',
+                            500: '#e78b61',
+                            600: '#dc6b40',
+                            700: '#b85133',
+                            800: '#94422c',
+                            900: '#763826',
+                        },
+                        darknude: {
+                            bg: '#2A2422',
+                            surface: '#38312E',
+                            card: '#443A36',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/project.css">
+</head>
+
+<body class="bg-nude-50 dark:bg-darknude-bg font-sans">
+
+    <div class="max-w-7xl mx-auto px-6 py-10">
+
+        <!-- Header -->
+        <div class="flex justify-between items-center mb-10">
+
+            <h1 class="text-4xl font-bold text-nude-800 dark:text-white">
+                My Projects
+            </h1>
+
+            <a href="index.html"
+                class="soft-button px-5 py-3 rounded-full font-semibold text-nude-700 dark:text-white">
+                <i class="fa-solid fa-arrow-left"></i>
+                Back
+            </a>
+
+        </div>
+
+        <!-- Main Project Navigation -->
+        <div class="project-tabs">
+
+            <button class="project-tab active">
+                <i class="fa-solid fa-ship"></i>
+                STIP
+            </button>
+
+            <button class="project-tab">
+                <i class="fa-solid fa-industry"></i>
+                Petrokimia
+            </button>
+
+            <button class="project-tab">
+                <i class="fa-solid fa-bolt"></i>
+                PLN
+            </button>
+
+            <button class="project-tab">
+                <i class="fa-solid fa-flask"></i>
+                PKC
+            </button>
+
+            <button class="project-tab">
+                <i class="fa-solid fa-layer-group"></i>
+                Others
+            </button>
+
+        </div>
+
+        <!-- Isi project STIP-->
+
+        <!-- STIP Sub Tabs -->
+        <div class="stip-tabs">
+
+            <button class="stip-tab active" data-tab="register">
+                Register
+            </button>
+
+            <button class="stip-tab" data-tab="sipencatar">
+                Sipencatar
+            </button>
+
+            <button class="stip-tab" data-tab="magister">
+                Magister
+            </button>
+
+            <button class="stip-tab" data-tab="asset">
+                Asset
+            </button>
+
+        </div>
+
+        <div id="projectContent">
+
+            <div class="soft-card project-card">
+
+                <!-- ================= REGISTER ================= -->
+                <div class="stip-content active" id="register">
+
+                    <h2 class="project-title">
+                        STIP Register 📝
+                    </h2>
+
+                    <div class="project-line"></div>
+
+                    <div class="project-text">
+                        <h3>About Project</h3>
+
+                        <p>
+                            STIP Register is a web-based registration system developed for the Sekolah Tinggi Ilmu Pelayaran (STIP) Jakarta
+                            to streamline the cadet admission and registration process. The application provides a centralized
+                            platform for managing participant registration, document verification, payment processing, and student data administration.
+                        </p>
+
+                    </div>
+
+                    <!-- Bagian 1 -->
+                    <div class="project-section">
+
+                        <div class="project-image">
+                            <img src="assets/images/stip_registrasi1.png" alt="STIP">
+                        </div>
+
+                        <div class="project-text">
+
+                            <p>
+                                The system supports two primary user roles:
+                            </p>
+
+                            <div class="project-text">
+
+                                <h3>👤 Participant</h3>
+
+                                <p>
+                                    Participants are required to create an account before completing their registration. Once registered, they can:
+                                </p>
+
+                                <ul>
+
+                                    <li>✔ Complete personal and academic registration forms.</li>
+
+                                    <li>✔ Upload all required supporting documents.</li>
+
+                                    <li>✔ Apply for the active admission period.</li>
+
+                                    <li>✔ Monitor document verification status.</li>
+
+                                    <li>✔ Receive a Virtual Account (VA) code for registration payment.</li>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Bagian 2 -->
+
+                    <div class="project-section reverse">
+
+                        <div class="project-image">
+
+                            <img src="assets/images/stip_registrasi3.png" alt="STIP"><br>
+                            <img src="assets/images/stip_registrasi4.png" alt="STIP"><br>
+                            <img src="assets/images/stip_registrasi2.png" alt="STIP">
+
+                        </div>
+
+                        <div class="project-text">
+
+                            <h3>👨‍💼 Administrator</h3>
+
+                            <p>
+                                The administrator manages the entire registration process through a centralized administration panel with the following modules:
+                            </p>
+
+                            <ul>
+
+                                <li>✔ Dashboard – Monitor overall registration activities and system status.</li>
+
+                                <li>✔ General Reference – Manage master data and general reference information.</li>
+
+                                <li>✔ Academic Reference – Configure academic-related data and registration settings.</li>
+
+                                <li>✔ Registration – Handle participant registration, document verification, and admission workflows.</li>
+
+                                <li>✔ Reports – Generate registration, payment, cadet, and academic reports.</li>
+
+                                <li>✔ System Management – Manage system configurations and operational settings.</li>
+
+                                <li>✔ User Management – Create and manage administrator accounts and access permissions.</li>
+
+                                <li>✔ Landing Page Management – Configure and update information displayed on the public website.</li>
+
+                                <li>✔ Application Settings – Manage system parameters and application configurations.</li>
+
+                                <li>✔ BNI Callback Logs – Monitor and validate payment callback transactions from the BNI Virtual Account integration.</li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- ================= END REGISTER ================= -->
+
+
+                <!-- ================= SIPENCATAR ================= -->
+
+                <div class="stip-content" id="sipencatar">
+
+                    <h2 class="project-title">
+                        STIP Sipencatar 🎓
+                    </h2>
+
+                    <div class="project-line"></div>
+
+                    <div class="project-text">
+                        <h3>About Project</h3>
+
+                        <p>
+                            Isi project Sipencatar di sini.
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- ================= MAGISTER ================= -->
+
+                <div class="stip-content" id="magister">
+
+                    <h2 class="project-title">
+                        STIP Magister 🎓
+                    </h2>
+
+                    <div class="project-line"></div>
+
+                    <div class="project-text">
+                        <h3>About Project</h3>
+
+                        <p>
+                            Isi project Magister di sini.
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- ================= ASSET ================= -->
+
+                <div class="stip-content" id="asset">
+
+                    <h2 class="project-title">
+                        STIP Asset 🏢
+                    </h2>
+
+                    <div class="project-line"></div>
+
+                    <div class="project-text">
+                        <h3>About Project</h3>
+
+                        <p>
+                            Isi project Asset di sini.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+<script src="assets/js/project.js"></script>
+
+</body>
+
+</html>

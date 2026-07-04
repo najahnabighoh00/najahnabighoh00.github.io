@@ -1,0 +1,101 @@
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 10px; }
+        ::-webkit-scrollbar-track { background: var(--bg-color); }
+        ::-webkit-scrollbar-thumb { background: var(--thumb-color); border-radius: 5px; }
+        
+        /* CSS Variables for Light/Dark mode scrollbar */
+        :root {
+            --bg-color: #fff6f0; /* nude-50 */
+            --thumb-color: #f5c6ab; /* nude-300 */
+        }
+        .dark {
+            --bg-color: #2A2422; /* darknude-bg */
+            --thumb-color: #443A36; /* darknude-card */
+        }
+
+        /* Hide scrollbar for navbar but allow scrolling on small devices */
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+        /* Soft Neumorphism / Claymorphism classes */
+        .soft-card {
+            background-color: #fff6f0;
+            border-radius: 24px;
+            box-shadow: 8px 8px 16px #e6ddd8, -8px -8px 16px #ffffff;
+            transition: all 0.3s ease;
+        }
+        
+        .dark .soft-card {
+            background-color: #38312E;
+            box-shadow: 6px 6px 12px #221d1b, -6px -6px 12px #4e4541;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .soft-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .soft-button {
+            background-color: #fcebe0;
+            box-shadow: 4px 4px 8px #e6ddd8, -4px -4px 8px #ffffff;
+        }
+        
+        .dark .soft-button {
+            background-color: #443A36;
+            box-shadow: 4px 4px 8px #221d1b, -4px -4px 8px #4e4541;
+        }
+
+        /* Decorative Background Blobs */
+        .blob-shape {
+            filter: blur(40px);
+            opacity: 0.6;
+            z-index: -1;
+        }
+        .dark .blob-shape {
+            opacity: 0.2;
+        }
+
+        /* Slider Navigation Buttons */
+        .swiper-button-next,
+        .swiper-button-prev{
+
+            width:50px;
+            height:50px;
+
+            border-radius:50%;
+
+            background:#fff6f0;
+
+            box-shadow:
+                6px 6px 12px #e6ddd8,
+                -6px -6px 12px #ffffff;
+
+            color:#dc6b40;
+
+            transition:.3s;
+        }
+
+        .swiper-button-next:hover,
+        .swiper-button-prev:hover{
+
+            transform:scale(1.08);
+
+        }
+
+        .swiper-button-next::after,
+        .swiper-button-prev::after{
+
+            font-size:18px;
+            font-weight:bold;
+
+        }
+
+        /*Dark Mode Slider Navigation Buttons*/
+        .dark .swiper-button-next,
+        .dark .swiper-button-prev{
+
+            background:#38312E;
+
+            color:#FBB6CE;
+
+        }

@@ -1,0 +1,325 @@
+/* ===========================
+   MAIN PROJECT TAB
+=========================== */
+
+.project-tabs{
+
+    display:flex;
+    align-items:center;
+    gap:30px;
+
+    margin-bottom:45px;
+
+    border-bottom:2px solid #eddcd2;
+    padding-bottom:15px;
+
+}
+
+.project-tab{
+
+    display:flex;
+    align-items:center;
+    gap:8px;
+
+    background:none;
+    border:none;
+
+    color:#9a5a3d;
+
+    font-size:17px;
+    font-weight:700;
+
+    cursor:pointer;
+
+    padding:6px 0;
+
+    transition:.3s;
+
+    position:relative;
+
+}
+
+.project-tab i{
+
+    font-size:15px;
+
+}
+
+.project-tab:hover{
+
+    color:#e78b61;
+
+}
+
+.project-tab.active{
+
+    color:#e78b61;
+
+}
+
+.project-tab.active::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    bottom:-17px;
+
+    width:100%;
+    height:4px;
+
+    background:#e78b61;
+
+    border-radius:99px;
+
+}
+
+/* ===========================
+   DARK MODE
+=========================== */
+
+.dark .project-tabs{
+
+    border-bottom:2px solid #4b403b;
+
+}
+
+.dark .project-tab{
+
+    color:#d9c3b8;
+
+}
+
+.dark .project-tab:hover{
+
+    color:#efab87;
+
+}
+
+.dark .project-tab.active{
+
+    color:#efab87;
+
+}
+
+.dark .project-tab.active::after{
+
+    background:#efab87;
+
+}
+
+.project-card{
+
+    padding:50px;
+
+    border-radius:30px;
+
+}
+
+.project-title{
+
+    font-size:40px;
+
+    font-weight:bold;
+
+    color:#94422c;
+
+}
+
+.dark .project-title{
+
+    color:white;
+
+}
+
+.project-line{
+
+    width:180px;
+
+    height:4px;
+
+    background:#e78b61;
+
+    margin:18px 0 50px;
+
+    border-radius:20px;
+
+}
+
+.project-section{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:60px;
+
+    margin-bottom:80px;
+
+}
+
+.project-section.reverse{
+
+    flex-direction:row-reverse;
+
+}
+
+.project-image{
+
+    flex:1;
+
+}
+
+.project-image img{
+
+    width:100%;
+
+    border-radius:20px;
+
+    box-shadow:0 15px 30px rgba(0,0,0,.15);
+
+}
+
+.project-text{
+
+    flex:1;
+
+}
+
+.project-text h3{
+
+    font-size:28px;
+
+    margin-bottom:20px;
+
+    color:#dc6b40;
+
+}
+
+.project-text p{
+
+    line-height:2;
+
+    margin-bottom:15px;
+
+}
+
+.project-text ul{
+
+    line-height:2.2;
+
+    padding-left:20px;
+
+}
+
+@media(max-width:900px){
+
+.project-section,
+.project-section.reverse{
+
+    flex-direction:column;
+
+}
+
+.project-title{
+
+    font-size:30px;
+
+}
+
+.project-card{
+
+    padding:30px;
+
+}
+
+}
+
+/* ===========================
+   STIP SUB TAB
+=========================== */
+
+.stip-tabs{
+
+    display:flex;
+    gap:12px;
+
+    margin-bottom:30px;
+
+}
+
+.stip-tab{
+
+    padding:10px 22px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#ffffff;
+
+    color:#5d4037;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    box-shadow:0 6px 18px rgba(0,0,0,.08);
+
+}
+
+.stip-tab:hover{
+
+    transform:translateY(-2px);
+
+}
+
+.stip-tab.active{
+
+    background:#e78b61;
+
+    color:#fff;
+
+}
+
+.stip-content{
+
+    display:none;
+
+}
+
+.stip-content.active{
+
+    display:block;
+
+}
+
+/* ===========================
+   DARK MODE
+=========================== */
+
+.dark .stip-tab{
+
+    background:#443A36;
+    color:#f5e8e1;
+    box-shadow:0 6px 18px rgba(0,0,0,.35);
+
+}
+
+.dark .stip-tab:hover{
+
+    background:#5a4b46;
+
+}
+
+.dark .stip-tab.active{
+
+    background:#efab87;
+    color:#2A2422;
+
+}

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio QA & Developer - Cute & Soft</title>
+    <title>Najah Nabighoh Portofolio</title>
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -21,6 +21,9 @@
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
 
     <!-- Custom Tailwind Configuration for Soft/Nude colors & Dark Mode -->
     <script>
@@ -84,64 +87,7 @@
             }
         }
     </script>
-    <style>
-        /* Custom Scrollbar */
-        ::-webkit-scrollbar { width: 10px; }
-        ::-webkit-scrollbar-track { background: var(--bg-color); }
-        ::-webkit-scrollbar-thumb { background: var(--thumb-color); border-radius: 5px; }
-        
-        /* CSS Variables for Light/Dark mode scrollbar */
-        :root {
-            --bg-color: #fff6f0; /* nude-50 */
-            --thumb-color: #f5c6ab; /* nude-300 */
-        }
-        .dark {
-            --bg-color: #2A2422; /* darknude-bg */
-            --thumb-color: #443A36; /* darknude-card */
-        }
-
-        /* Hide scrollbar for navbar but allow scrolling on small devices */
-        .no-scrollbar::-webkit-scrollbar { display: none; }
-        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
-
-        /* Soft Neumorphism / Claymorphism classes */
-        .soft-card {
-            background-color: #fff6f0;
-            border-radius: 24px;
-            box-shadow: 8px 8px 16px #e6ddd8, -8px -8px 16px #ffffff;
-            transition: all 0.3s ease;
-        }
-        
-        .dark .soft-card {
-            background-color: #38312E;
-            box-shadow: 6px 6px 12px #221d1b, -6px -6px 12px #4e4541;
-            border: 1px solid rgba(255, 255, 255, 0.05);
-        }
-
-        .soft-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .soft-button {
-            background-color: #fcebe0;
-            box-shadow: 4px 4px 8px #e6ddd8, -4px -4px 8px #ffffff;
-        }
-        
-        .dark .soft-button {
-            background-color: #443A36;
-            box-shadow: 4px 4px 8px #221d1b, -4px -4px 8px #4e4541;
-        }
-
-        /* Decorative Background Blobs */
-        .blob-shape {
-            filter: blur(40px);
-            opacity: 0.6;
-            z-index: -1;
-        }
-        .dark .blob-shape {
-            opacity: 0.2;
-        }
-    </style>
+    
 </head>
 
 <body class="bg-nude-50 text-slate-700 dark:bg-darknude-bg dark:text-nude-100 font-sans antialiased transition-colors duration-500 overflow-x-hidden relative">
@@ -245,19 +191,32 @@
                 
                     <!-- Project Card 1 -->
                     <div class="swiper-slide">
-                        <a href="#" class="group soft-card block overflow-hidden p-3 relative min-h-[540px] flex flex-col">
 
-                            <div class="absolute top-4 right-4 z-10 bg-white/80 dark:bg-black/50 backdrop-blur-sm p-2 rounded-full text-nude-500 dark:text-nude-300 opacity-0 group-hover:opacity-100 transition-opacity">
+                        <div class="group soft-card block overflow-hidden p-3 relative min-h-[540px] flex flex-col">
+
+                            <!-- Open Project Icon -->
+                            <a href="project.html?project=stip"
+                                class="absolute top-4 right-4 z-10
+                                    bg-white/80 dark:bg-black/50
+                                    backdrop-blur-sm
+                                    p-2 rounded-full
+                                    text-nude-500 dark:text-nude-300
+                                    opacity-0 group-hover:opacity-100
+                                    transition-all duration-300
+                                    hover:scale-110">
+
                                 <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            </div>
+
+                            </a>
 
                             <!-- Image -->
                             <div class="h-56 rounded-[1rem] overflow-hidden bg-slate-100 dark:bg-darknude-surface mb-4">
+
                                 <img
                                     src="assets/images/stip_register.png"
                                     alt="STIP Register"
-                                    class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-110"
-                                />
+                                    class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-110">
+
                             </div>
 
                             <!-- Content -->
@@ -271,19 +230,28 @@
                                     A web-based platform that streamlines academic and administrative processes at STIP. It includes modules for registration, cadet admissions (SiPencatar), master's program management, and asset management.
                                 </p>
 
-                                <div class="flex flex-wrap gap-2 mt-5">
-                                    <span class="px-3 py-1 bg-accent-blue/30 dark:bg-accent-blue/10 text-blue-700 dark:text-blue-300 text-xs font-bold rounded-full">
-                                        React
-                                    </span>
+                                <!-- Explore Button -->
+                                <div class="mt-auto pt-6">
 
-                                    <span class="px-3 py-1 bg-accent-green/30 dark:bg-accent-green/10 text-green-700 dark:text-green-300 text-xs font-bold rounded-full">
-                                        Cypress
-                                    </span>
+                                    <a href="project.html?project=stip"
+                                        class="inline-flex items-center justify-center gap-2
+                                            w-full px-5 py-3 rounded-xl
+                                            bg-nude-500 hover:bg-nude-600
+                                            text-white font-semibold text-sm
+                                            transition-all duration-300 hover:scale-[1.02]">
+
+                                        🚀 Explore Project
+
+                                        <i class="fa-solid fa-arrow-right transition-transform duration-300 group-hover:translate-x-1"></i>
+
+                                    </a>
+
                                 </div>
 
                             </div>
 
-                        </a>
+                        </div>
+
                     </div>
 
                     <!-- Project Card 2 -->
@@ -315,14 +283,17 @@
                                     Worked on multiple systems, including Job Tender, PTS, SUMON, RMP, EHRD, Petrostar, Dashboard, PFC, SUPER, ORNAMEN, HCDEV, and SERGIO.
                                 </p>
 
-                                <div class="flex flex-wrap gap-2 mt-5">
-                                    <span class="px-3 py-1 bg-accent-pink/30 dark:bg-accent-pink/10 text-pink-700 dark:text-pink-300 text-xs font-bold rounded-full">
-                                        Laravel
-                                    </span>
-
-                                    <span class="px-3 py-1 bg-nude-300/30 dark:bg-nude-700/30 text-nude-800 dark:text-nude-300 text-xs font-bold rounded-full">
-                                        Postman
-                                    </span>
+                                <!-- Explore Project Button -->
+                                <div class="mt-auto pt-6">
+                                    <button
+                                        class="group inline-flex items-center justify-center gap-2
+                                            w-full px-5 py-3 rounded-xl
+                                            bg-nude-500 hover:bg-nude-600
+                                            text-white font-semibold text-sm
+                                            transition-all duration-300">
+                                        🚀 Explore Project
+                                        <i class="fa-solid fa-arrow-right transition-transform duration-300 group-hover:translate-x-1"></i>
+                                    </button>
                                 </div>
 
                             </div>
@@ -359,23 +330,25 @@
                                     power upgrades, and maintenance based on customer demand and power capacity.
                                 </p>
 
-                                <div class="flex flex-wrap gap-2 mt-5">
-                                    <span class="px-3 py-1 bg-accent-yellow/30 dark:bg-accent-yellow/10 text-yellow-700 dark:text-yellow-300 text-xs font-bold rounded-full">
-                                        Vue.js
-                                    </span>
-
-                                    <span class="px-3 py-1 bg-purple-200/50 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 text-xs font-bold rounded-full">
-                                        Selenium
-                                    </span>
+                                <!-- Explore Project Button -->
+                                <div class="mt-auto pt-6">
+                                    <button
+                                        class="group inline-flex items-center justify-center gap-2
+                                            w-full px-5 py-3 rounded-xl
+                                            bg-nude-500 hover:bg-nude-600
+                                            text-white font-semibold text-sm
+                                            transition-all duration-300">
+                                        🚀 Explore Project
+                                        <i class="fa-solid fa-arrow-right transition-transform duration-300 group-hover:translate-x-1"></i>
+                                    </button>
                                 </div>
 
                             </div>
 
                         </a>
                     </div>
-                </div>
 
-                <!-- Project Card 4 -->
+                    <!-- Project Card 4 -->
                     <div class="swiper-slide">
                         <a href="#" class="group soft-card block overflow-hidden p-3 relative min-h-[540px] flex flex-col">
 
@@ -386,8 +359,8 @@
                             <!-- Image -->
                             <div class="h-56 rounded-[1rem] overflow-hidden bg-slate-100 dark:bg-darknude-surface mb-4">
                                 <img
-                                    src="assets/images/pln_prima.png"
-                                    alt="PLN"
+                                    src="assets/images/pkc.png"
+                                    alt="PKC"
                                     class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-110"
                                 />
                             </div>
@@ -400,27 +373,84 @@
                                 </h3>
 
                                 <p class="text-slate-500 dark:text-slate-400 text-sm font-medium leading-relaxed flex-1">
-                                    Developed and tested a Desktop & Mobile Investment Recommendation System for PT PLN (Persero) to support investment planning for new connections, 
-                                    power upgrades, and maintenance based on customer demand and power capacity.
+                                    Experienced in handling enterprise application projects for PT Pupuk Kujang Cikampek, including the Internship Registration System, RMP, and SUPER, 
+                                    supporting digital business processes through comprehensive software testing and quality assurance.
                                 </p>
 
-                                <div class="flex flex-wrap gap-2 mt-5">
-                                    <span class="px-3 py-1 bg-accent-yellow/30 dark:bg-accent-yellow/10 text-yellow-700 dark:text-yellow-300 text-xs font-bold rounded-full">
-                                        Vue.js
-                                    </span>
-
-                                    <span class="px-3 py-1 bg-purple-200/50 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 text-xs font-bold rounded-full">
-                                        Selenium
-                                    </span>
+                                <!-- Explore Project Button -->
+                                <div class="mt-auto pt-6">
+                                    <button
+                                        class="group inline-flex items-center justify-center gap-2
+                                            w-full px-5 py-3 rounded-xl
+                                            bg-nude-500 hover:bg-nude-600
+                                            text-white font-semibold text-sm
+                                            transition-all duration-300">
+                                        🚀 Explore Project
+                                        <i class="fa-solid fa-arrow-right transition-transform duration-300 group-hover:translate-x-1"></i>
+                                    </button>
                                 </div>
 
                             </div>
 
                         </a>
                     </div>
+
+                    <!-- Project Card 5 -->
+                    <div class="swiper-slide">
+                        <a href="#" class="group soft-card block overflow-hidden p-3 relative min-h-[540px] flex flex-col">
+
+                            <div class="absolute top-4 right-4 z-10 bg-white/80 dark:bg-black/50 backdrop-blur-sm p-2 rounded-full text-nude-500 dark:text-nude-300 opacity-0 group-hover:opacity-100 transition-opacity">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </div>
+
+                            <!-- Image -->
+                            <div class="h-56 rounded-[1rem] overflow-hidden bg-slate-100 dark:bg-darknude-surface mb-4">
+                                <img
+                                    src="assets/images/divisihr.png"
+                                    alt="And others"
+                                    class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-110"
+                                />
+                            </div>
+
+                            <!-- Content -->
+                            <div class="flex flex-col flex-1 px-3 pb-3">
+
+                                <h3 class="text-xl font-bold text-nude-800 dark:text-nude-100 mb-2 group-hover:text-nude-500 transition-colors">
+                                    Other Client 🛒
+                                </h3>
+
+                                <p class="text-slate-500 dark:text-slate-400 text-sm font-medium leading-relaxed flex-1">
+                                    Worked on enterprise application projects for various clients, including DivisiHR (Employee Administration System) 
+                                    and Youbuy (Sales Order Calculation System),
+                                </p>
+
+                                <!-- Explore Project Button -->
+                                <div class="mt-auto pt-6">
+                                    <button
+                                        class="group inline-flex items-center justify-center gap-2
+                                            w-full px-5 py-3 rounded-xl
+                                            bg-nude-500 hover:bg-nude-600
+                                            text-white font-semibold text-sm
+                                            transition-all duration-300">
+                                        🚀 Explore Project
+                                        <i class="fa-solid fa-arrow-right transition-transform duration-300 group-hover:translate-x-1"></i>
+                                    </button>
+                                </div>
+
+                            </div>
+
+                        </a>
+                    </div>
+
                 </div>
 
+                </div>
+
+
                 <div class="swiper-pagination mt-8"></div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
 
             </div>
         </div>
@@ -638,33 +668,34 @@
         // --- Project Slider ---
         const swiper = new Swiper(".projectSwiper", {
 
-            slidesPerView: 1,
+            slidesPerView:1,
 
-            spaceBetween: 30,
+            spaceBetween:30,
 
-            grabCursor: true,
+            grabCursor:true,
 
-            loop: true,
+            loop:true,
 
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
+            pagination:{
+                el:".swiper-pagination",
+                clickable:true,
             },
 
-            breakpoints: {
+            navigation:{
+                nextEl:".swiper-button-next",
+                prevEl:".swiper-button-prev",
+            },
 
-                640: {
-                    slidesPerView: 1,
+            breakpoints:{
+                640:{
+                    slidesPerView:1,
                 },
-
-                768: {
-                    slidesPerView: 2,
+                768:{
+                    slidesPerView:2,
                 },
-
-                1200: {
-                    slidesPerView: 3,
+                1200:{
+                    slidesPerView:3,
                 }
-
             }
 
         });
