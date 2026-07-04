@@ -108,12 +108,12 @@
         <!-- STIP Sub Tabs -->
         <div class="stip-tabs">
 
-            <button class="stip-tab active" data-tab="register">
-                Register
-            </button>
-
-            <button class="stip-tab" data-tab="sipencatar">
+            <button class="stip-tab active" data-tab="sipencatar">
                 Sipencatar
+            </button>
+            
+            <button class="stip-tab" data-tab="register">
+                Register
             </button>
 
             <button class="stip-tab" data-tab="magister">
@@ -130,8 +130,122 @@
 
             <div class="soft-card project-card">
 
+                <!-- ================= SIPENCATAR ================= -->
+
+                <div class="stip-content active" id="sipencatar">
+
+                    <h2 class="project-title">
+                        STIP Sipencatar 🎓
+                    </h2>
+
+                    <div class="project-line"></div>
+
+                    <div class="project-text">
+                        <h3>About Project</h3>
+
+                        <p>
+                            A web-based admission system that manages the entire cadet recruitment process, 
+                            including applicant registration, document submission, admission selection, examination schedules, and announcement of admission results.
+                        </p>
+
+                    </div>
+
+                    <!-- Bagian 1 -->
+                    <div class="project-section">
+
+                        <div class="project-image">
+                            <img src="assets/images/stip_sipencatar1.png" alt="STIP">
+                        </div>
+
+                        <div class="project-text">
+
+                            <p>
+                                The system supports two primary user roles:
+                            </p>
+
+                            <div class="project-text">
+
+                                <h3>👤 Prospective Cadet (Applicant)</h3>
+
+                                <p>
+                                    Prospective cadets can create an account to participate in the admission process. Through the system, they can:
+
+                                </p>
+
+                                <ul>
+
+                                    <li>✔ Create and activate an admission account.</li>
+
+                                    <li>✔ Complete personal and academic information.</li>
+
+                                    <li>✔ Upload all required admission documents.</li>
+
+                                    <li>✔ Apply for the active admission period.</li>
+
+                                    <li>✔ Monitor the status of document verification and selection stages.</li>
+
+                                    <li>✔ View admission results and selection announcements.</li>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Bagian 2 -->
+
+                    <div class="project-section reverse">
+
+                        <div class="project-image">
+
+                            <img src="assets/images/stip_sipencatar2.png" alt="STIP"><br>
+                            <img src="assets/images/stip_sipencatar3.png" alt="STIP"><br>
+                            <img src="assets/images/stip_sipencatar4.png" alt="STIP">
+
+                        </div>
+
+                        <div class="project-text">
+
+                            <h3>👨‍💼 Administrator</h3>
+
+                            <p>
+                                Administrators manage the entire admission process through a centralized administration panel with the following modules:
+                            </p>
+
+                            <ul>
+
+                                <li>✔ Dashboard – Monitor admission activities and overall system status.</li>
+
+                                <li>✔ General Reference – Manage master data and general reference information.</li>
+
+                                <li>✔ Academic Reference – Configure academic data and admission settings.</li>
+
+                                <li>✔ Master Data – Manage required documents, upload limits, selection stages, examination types, and admission periods.</li>
+
+                                <li>✔ Selection Management – Verify applicant documents, manage selection stages, and determine successful applicants.</li>
+
+                                <li>✔ Reports – Generate admission transaction reports and administrative summaries.</li>
+
+                                <li>✔ System Management – Configure system settings and operational parameters.</li>
+
+                                <li>✔ User Management – Manage administrator accounts, roles, and access permissions.</li>
+
+                                <li>✔ Landing Page Management – Update public information, announcements, and website content.</li>
+
+                                <li>✔ Application Settings – Manage system configuration, administrative requirements, applicant password reset, applicant email removal, and manual applicant account activation.</li>
+                                
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                
                 <!-- ================= REGISTER ================= -->
-                <div class="stip-content active" id="register">
+                <div class="stip-content" id="register">
 
                     <h2 class="project-title">
                         STIP Register 📝
@@ -143,9 +257,8 @@
                         <h3>About Project</h3>
 
                         <p>
-                            STIP Register is a web-based registration system developed for the Sekolah Tinggi Ilmu Pelayaran (STIP) Jakarta
-                            to streamline the cadet admission and registration process. The application provides a centralized
-                            platform for managing participant registration, document verification, payment processing, and student data administration.
+                            A web-based registration system for admitted cadets, supporting document verification, re-registration, 
+                            virtual account payment, NRP generation, student data management, and administrative reporting.
                         </p>
 
                     </div>
@@ -165,23 +278,25 @@
 
                             <div class="project-text">
 
-                                <h3>👤 Participant</h3>
+                                <h3>👤 Cadet (Participant)</h3>
 
                                 <p>
-                                    Participants are required to create an account before completing their registration. Once registered, they can:
+                                    Accepted cadets are required to register an account before completing the re-registration process. Through the system, they can:
                                 </p>
 
                                 <ul>
 
-                                    <li>✔ Complete personal and academic registration forms.</li>
+                                    <li>✔ Create and activate their registration account.</li>
 
-                                    <li>✔ Upload all required supporting documents.</li>
+                                    <li>✔ Complete personal, academic, and administrative information.</li>
 
-                                    <li>✔ Apply for the active admission period.</li>
+                                    <li>✔ Upload all required registration documents.</li>
 
                                     <li>✔ Monitor document verification status.</li>
 
-                                    <li>✔ Receive a Virtual Account (VA) code for registration payment.</li>
+                                    <li>✔ Receive a BNI Virtual Account (VA) code for registration payment.</li>
+
+                                    <li>✔ Complete the re-registration process for the active admission period.</li>
 
                                 </ul>
 
@@ -208,30 +323,30 @@
                             <h3>👨‍💼 Administrator</h3>
 
                             <p>
-                                The administrator manages the entire registration process through a centralized administration panel with the following modules:
+                                Administrators manage the entire re-registration process through a centralized administration panel, including:
                             </p>
 
                             <ul>
 
-                                <li>✔ Dashboard – Monitor overall registration activities and system status.</li>
+                                <li>✔ Dashboard – Monitor registration activities and overall system status.</li>
 
                                 <li>✔ General Reference – Manage master data and general reference information.</li>
 
-                                <li>✔ Academic Reference – Configure academic-related data and registration settings.</li>
+                                <li>✔ Academic Reference – Configure academic data and registration settings.</li>
 
-                                <li>✔ Registration – Handle participant registration, document verification, and admission workflows.</li>
+                                <li>✔ Registration – Manage cadet registrations, document verification, NRP generation, and re-registration workflows.</li>
 
-                                <li>✔ Reports – Generate registration, payment, cadet, and academic reports.</li>
+                                <li>✔ Reports – Generate registration, payment, cadet, and administrative reports.</li>
 
-                                <li>✔ System Management – Manage system configurations and operational settings.</li>
+                                <li>✔ System Management – Configure system settings and operational parameters.</li>
 
-                                <li>✔ User Management – Create and manage administrator accounts and access permissions.</li>
+                                <li>✔ User Management – Manage administrator accounts, roles, and permissions.</li>
 
-                                <li>✔ Landing Page Management – Configure and update information displayed on the public website.</li>
+                                <li>✔ Landing Page Management – Update public website content and announcements.</li>
 
-                                <li>✔ Application Settings – Manage system parameters and application configurations.</li>
+                                <li>✔ Application Settings – Manage system configuration, NRP settings, payment types, payment configuration, IP whitelist, print templates, cadet user accounts, password reset, and manual account activation.</li>
 
-                                <li>✔ BNI Callback Logs – Monitor and validate payment callback transactions from the BNI Virtual Account integration.</li>
+                                <li>✔ BNI Callback Logs – Monitor and validate Virtual Account payment callbacks from BNI integration.</li>
 
                             </ul>
 
@@ -242,26 +357,6 @@
                 </div>
                 <!-- ================= END REGISTER ================= -->
 
-
-                <!-- ================= SIPENCATAR ================= -->
-
-                <div class="stip-content" id="sipencatar">
-
-                    <h2 class="project-title">
-                        STIP Sipencatar 🎓
-                    </h2>
-
-                    <div class="project-line"></div>
-
-                    <div class="project-text">
-                        <h3>About Project</h3>
-
-                        <p>
-                            Isi project Sipencatar di sini.
-                        </p>
-                    </div>
-
-                </div>
 
                 <!-- ================= MAGISTER ================= -->
 
@@ -277,8 +372,105 @@
                         <h3>About Project</h3>
 
                         <p>
-                            Isi project Magister di sini.
+                            STIP Magister is a web-based admission system developed for the Master's Degree Program (S2) at Sekolah Tinggi Ilmu Pelayaran (STIP) Jakarta. 
+                            The platform streamlines the postgraduate admission process by providing an integrated system for online registration, document submission, admission selection, and administrative management.
                         </p>
+                        <p>
+                            The system enables prospective students to complete the entire admission process digitally 
+                            while allowing administrators to efficiently manage applicant data, selection stages, and academic administration.
+                        </p>
+
+                    </div>
+
+                    <!-- Bagian 1 -->
+                    <div class="project-section">
+
+                        <div class="project-image">
+                            <img src="assets/images/stip_magister1.png" alt="STIP">
+                        </div>
+
+                        <div class="project-text">
+                            
+                            <p>
+                                The system supports two primary user roles:
+                            </p>
+                            
+                            <div class="project-text">
+
+                                <h3>👤 Prospective Student (Applicant)</h3>
+
+                                <p>
+                                    Prospective students can create an account and complete the online admission process through the system. They can:
+                                </p>
+
+                                <ul>
+
+                                    <li>✔ Create and activate an admission account.</li>
+
+                                    <li>✔ Complete personal and educational information.</li>
+
+                                    <li>✔ Upload all required admission documents.</li>
+
+                                    <li>✔ Apply for the active admission period.</li>
+
+                                    <li>✔ Monitor document verification and selection status.</li>
+
+                                    <li>✔ View admission results and re-registration information.</li>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Bagian 2 -->
+
+                    <div class="project-section reverse">
+
+                        <div class="project-image">
+
+                            <img src="assets/images/stip_magister2.png" alt="STIP"><br>
+                            <img src="assets/images/stip_magister3.png" alt="STIP"><br>
+                            <img src="assets/images/stip_magister4.png" alt="STIP">
+
+                        </div>
+
+                        <div class="project-text">
+
+                            <h3>👨‍💼 Administrator</h3>
+
+                            <p>
+                                Administrators manage the entire postgraduate admission process through a centralized administration panel with the following modules:
+                            </p>
+
+                            <ul>
+
+                                <li>✔ Dashboard – Monitor admission activities and overall system status.</li>
+
+                                <li>✔ General Reference – Manage master data and general reference information.</li>
+
+                                <li>✔ Academic Reference – Configure academic data and admission settings.</li>
+
+                                <li>✔ Master Data – Manage required documents, selection stages, examination types, and admission periods.</li>
+
+                                <li>✔ Selection Management – Verify applicant documents, manage selection stages, process re-registration, and determine successful applicants.</li>
+
+                                <li>✔ Reports – Generate admission transaction reports and administrative summaries.</li>
+
+                                <li>✔ System Management – Configure system settings and operational parameters.</li>
+
+                                <li>✔ User Management – Manage administrator accounts, roles, and access permissions.</li>
+
+                                <li>✔ Landing Page Management – Update public information, announcements, and website content.</li>
+
+                                <li>✔ Application Settings – Manage system configuration, administrative requirements, student password reset, student email removal, and manual student account activation.</li>
+
+                            </ul>
+
+                        </div>
+
                     </div>
 
                 </div>
@@ -297,8 +489,118 @@
                         <h3>About Project</h3>
 
                         <p>
-                            Isi project Asset di sini.
+                            STIP Asset is a web-based public facility reservation system developed for Sekolah Tinggi Ilmu Pelayaran (STIP) Jakarta. 
+                            The platform enables the public to reserve accommodation and other public service facilities online through a centralized reservation system.
                         </p>
+                        <p>
+                            The application simplifies the booking process by allowing users to register, submit reservation requests, select available facilities, 
+                            and manage their bookings, while providing administrators with tools to efficiently manage assets, reservations, and public service information.
+                        </p>
+
+                    </div>
+
+                    <!-- Bagian 1 -->
+                    <div class="project-section">
+
+                        <div class="project-image">
+                            <img src="assets/images/stip_asset1.png" alt="STIP"><br>
+                            <img src="assets/images/stip_asset5.png" alt="STIP">
+                        </div>
+
+                        <div class="project-text">
+
+                            <p>
+                                The system supports two primary user roles:
+                            </p>
+                            
+                            <div class="project-text">
+
+                                <h3>👤 Customer</h3>
+
+                                <p>
+                                    Customers are required to create an account before making a reservation. Through the system, they can:
+                                </p>
+
+                                <ul>
+
+                                    <li>✔ Register and activate a customer account.</li>
+
+                                    <li>✔ Browse available public facilities and accommodations.</li>
+
+                                    <li>✔ Select check-in date and reservation duration.</li>
+
+                                    <li>✔ Choose optional services, such as breakfast.</li>
+
+                                    <li>✔ View available rooms, facilities, and booking costs.</li>
+
+                                    <li>✔ Submit online reservation requests.</li>
+
+                                    <li>✔ Review booking details before confirmation.</li>
+
+                                    <li>✔ Cancel reservations according to the cancellation policy.</li>
+
+                                    <li>✔ Receive booking status updates and reservation information.</li>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Bagian 2 -->
+
+                    <div class="project-section reverse">
+
+                        <div class="project-image">
+
+                            <img src="assets/images/stip_asset2.png" alt="STIP"><br>
+                            <img src="assets/images/stip_asset3.png" alt="STIP"><br>
+                            <img src="assets/images/stip_asset4.png" alt="STIP">
+
+                        </div>
+
+                        <div class="project-text">
+
+                            <h3>👨‍💼 Administrator</h3>
+
+                            <p>
+                                Administrators manage the entire reservation system through a centralized administration panel with the following modules:
+                            </p>
+
+                            <ul>
+
+                                <li>✔ Dashboard – Monitor reservation activities, facility availability, and overall system performance.</li>
+
+                                <li>✔ User Management – Manage customer accounts and administrator access.</li>
+
+                                <li>✔ Asset Management – Manage public facilities, accommodation assets, and asset availability.</li>
+
+                                <li>✔ Asset Locking – Block or reserve assets that are temporarily unavailable for booking.</li>
+
+                                <li>✔ Reservation Management – Process reservation requests and monitor booking status.</li>
+
+                                <li>✔ Reservation Cancellation – Review and manage customer cancellation requests.</li>
+
+                                <li>✔ Cancellation Settings – Configure reservation cancellation policies and rules.</li>
+
+                                <li>✔ Transaction List – Monitor booking transactions and payment records.</li>
+
+                                <li>✔ Feedback Management – Manage customer feedback, suggestions, and service evaluations.</li>
+
+                                <li>✔ Gallery Management – Manage facility images displayed on the website.</li>
+
+                                <li>✔ News Management – Publish announcements and news updates.</li>
+
+                                <li>✔ Public Services – Manage public service information and facility details.</li>
+
+                                <li>✔ System Settings – Configure application settings and operational parameters.</li>
+
+                            </ul>
+
+                        </div>
+
                     </div>
 
                 </div>
