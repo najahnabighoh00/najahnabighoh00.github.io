@@ -375,6 +375,51 @@
                     </div>
                 </div>
 
+                <!-- Project Card 4 -->
+                    <div class="swiper-slide">
+                        <a href="#" class="group soft-card block overflow-hidden p-3 relative min-h-[540px] flex flex-col">
+
+                            <div class="absolute top-4 right-4 z-10 bg-white/80 dark:bg-black/50 backdrop-blur-sm p-2 rounded-full text-nude-500 dark:text-nude-300 opacity-0 group-hover:opacity-100 transition-opacity">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </div>
+
+                            <!-- Image -->
+                            <div class="h-56 rounded-[1rem] overflow-hidden bg-slate-100 dark:bg-darknude-surface mb-4">
+                                <img
+                                    src="assets/images/pln_prima.png"
+                                    alt="PLN"
+                                    class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-110"
+                                />
+                            </div>
+
+                            <!-- Content -->
+                            <div class="flex flex-col flex-1 px-3 pb-3">
+
+                                <h3 class="text-xl font-bold text-nude-800 dark:text-nude-100 mb-2 group-hover:text-nude-500 transition-colors">
+                                    PT Pupuk Kujang Cikampek 🌾
+                                </h3>
+
+                                <p class="text-slate-500 dark:text-slate-400 text-sm font-medium leading-relaxed flex-1">
+                                    Developed and tested a Desktop & Mobile Investment Recommendation System for PT PLN (Persero) to support investment planning for new connections, 
+                                    power upgrades, and maintenance based on customer demand and power capacity.
+                                </p>
+
+                                <div class="flex flex-wrap gap-2 mt-5">
+                                    <span class="px-3 py-1 bg-accent-yellow/30 dark:bg-accent-yellow/10 text-yellow-700 dark:text-yellow-300 text-xs font-bold rounded-full">
+                                        Vue.js
+                                    </span>
+
+                                    <span class="px-3 py-1 bg-purple-200/50 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 text-xs font-bold rounded-full">
+                                        Selenium
+                                    </span>
+                                </div>
+
+                            </div>
+
+                        </a>
+                    </div>
+                </div>
+
                 <div class="swiper-pagination mt-8"></div>
 
             </div>
@@ -523,7 +568,10 @@
         </div>
     </div>
 
-    <!-- Scripts -->
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Script Website -->
     <script>
         // --- Lightbox Logic ---
         const lightbox = document.getElementById('lightbox');
@@ -621,8 +669,6 @@
 
         });
     </script>
-
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 </body>
 </html>
