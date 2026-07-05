@@ -24,21 +24,100 @@ const projects = {
 
 };
 
-const stipTabs = document.querySelectorAll(".stip-tab");
-const stipContents = document.querySelectorAll(".stip-content");
+// ===========================
+// MAIN PROJECT TAB
+// ===========================
 
-stipTabs.forEach(tab => {
+const projectTabs = document.querySelectorAll(".project-tab");
+const projectContents = document.querySelectorAll(".project-content");
+
+// Fungsi membuka project
+function openProject(projectId) {
+
+    projectTabs.forEach(btn =>
+        btn.classList.remove("active")
+    );
+
+    projectContents.forEach(content =>
+        content.classList.remove("active")
+    );
+
+    const activeTab = document.querySelector(
+        `.project-tab[data-tab="${projectId}"]`
+    );
+
+    const activeContent = document.getElementById(projectId);
+
+    if (activeTab && activeContent) {
+
+        activeTab.classList.add("active");
+        activeContent.classList.add("active");
+
+        // Update URL tanpa reload
+        history.replaceState(
+            null,
+            "",
+            "?project=" + projectId
+        );
+
+    }
+
+}
+
+// Event klik tab
+projectTabs.forEach(tab => {
 
     tab.addEventListener("click", () => {
 
-        stipTabs.forEach(btn => btn.classList.remove("active"));
-        stipContents.forEach(content => content.classList.remove("active"));
+        openProject(tab.dataset.tab);
 
-        tab.classList.add("active");
+    });
 
-        document
-            .getElementById(tab.dataset.tab)
-            .classList.add("active");
+});
+
+// Baca URL saat halaman pertama kali dibuka
+const params = new URLSearchParams(window.location.search);
+const currentProject = params.get("project");
+
+if (currentProject) {
+
+    openProject(currentProject);
+
+} else {
+
+    openProject("stip");
+
+}
+
+
+// ===========================
+// SUB TAB
+// ===========================
+
+document.querySelectorAll(".project-content").forEach(project => {
+
+    const tabs = project.querySelectorAll(".sub-tab");
+    const contents = project.querySelectorAll(".sub-content");
+
+    tabs.forEach(tab => {
+
+        tab.addEventListener("click", () => {
+
+            tabs.forEach(btn =>
+                btn.classList.remove("active")
+            );
+
+            contents.forEach(content =>
+                content.classList.remove("active")
+            );
+
+            tab.classList.add("active");
+
+            project
+                .querySelector("#" + tab.dataset.tab)
+                .classList.add("active");
+
+        });
 
     });
 
