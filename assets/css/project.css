@@ -523,3 +523,43 @@
     margin-bottom:20px;
     color:#dc6b40;
 }
+
+.user-roles{
+
+    display:grid;
+
+    grid-template-columns:repeat(2, 1fr);
+
+    column-gap:30px;   /* sebelumnya 40px */
+    row-gap:10px;      /* sebelumnya 18px */
+
+    margin-top:20px;
+
+}
+
+.user-roles div{
+
+    display:flex;
+    align-items:center;
+    gap:8px;
+
+    font-size:17px;
+    font-weight:500;
+    line-height:1.4;
+
+}
+
+.workflow-sublist{
+
+    margin-top:10px;
+    margin-left:30px;
+
+}
+
+.workflow-sublist li{
+
+    list-style:disc;
+    margin-bottom:6px;
+    line-height:1.8;
+
+}
