@@ -563,3 +563,53 @@
     line-height:1.8;
 
 }
+
+/* ===========================
+   PETROSTAR ONLY
+=========================== */
+
+.petrostar-image{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    width:100%;
+
+    margin:35px 0 20px;
+
+}
+
+.petrostar-image img{
+
+    display:block;
+
+    width:100%;
+    max-width:700px;
+    height:auto;
+
+    border-radius:20px;
+    box-shadow:0 15px 30px rgba(0,0,0,.15);
+
+}
+
+.project-note{
+
+    width:100%;
+    max-width:none;
+
+    margin:0 0 40px;
+
+    font-size:15px;
+    line-height:1.9;
+
+    font-style:italic;
+    color:#666;
+
+}
+
+.dark .project-note{
+
+    color:#bdbdbd;
+
+}
