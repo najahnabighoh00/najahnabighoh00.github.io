@@ -613,3 +613,247 @@
     color:#bdbdbd;
 
 }
+
+/* ===========================
+   MOBILE APP GALLERY
+=========================== */
+
+.mobile-grid{
+
+    display:grid;
+    grid-template-columns:repeat(4,minmax(170px,1fr));
+
+    gap:40px 24px;
+
+    margin:40px 0;
+
+    align-items:start;
+
+}
+
+.mobile-card{
+
+    text-align:center;
+
+    transition:.3s ease;
+
+}
+
+.mobile-card:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.mobile-card img{
+
+    width:140px;
+    height:auto;
+
+    display:block;
+
+    margin:0 auto 18px;
+
+    border-radius:18px;
+
+    box-shadow:0 15px 30px rgba(0,0,0,.12);
+
+    transition:.3s;
+
+}
+
+.mobile-card:hover img{
+
+    transform:scale(1.03);
+
+}
+
+.mobile-content{
+
+    max-width:190px;
+
+    margin:auto;
+
+}
+
+.mobile-content h4{
+
+    margin-bottom:10px;
+
+    font-size:20px;
+
+    font-weight:700;
+
+    color:#94422c;
+
+}
+
+.mobile-content p{
+
+    font-size:14px;
+
+    line-height:1.8;
+
+    color:#7a6b64;
+
+}
+
+
+/* ===========================
+   DARK MODE
+=========================== */
+
+.dark .mobile-card img{
+
+    box-shadow:0 18px 35px rgba(0,0,0,.45);
+
+}
+
+.dark .mobile-content h4{
+
+    color:#efab87;
+
+}
+
+.dark .mobile-content p{
+
+    color:#d6c5bc;
+
+}
+
+
+/* ===========================
+   TABLET
+=========================== */
+
+@media(max-width:1100px){
+
+.mobile-grid{
+
+    grid-template-columns:repeat(3,1fr);
+
+}
+
+}
+
+
+/* ===========================
+   TABLET SMALL
+=========================== */
+
+@media(max-width:850px){
+
+.mobile-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media(max-width:600px){
+
+.mobile-grid{
+
+    grid-template-columns:1fr;
+
+    gap:35px;
+
+}
+
+.mobile-card img{
+
+    width:160px;
+
+}
+
+.mobile-content{
+
+    max-width:260px;
+
+}
+
+}
+
+/* ===========================
+   FLOWCHART
+=========================== */
+
+.flowchart-grid{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:flex-start;
+
+    gap:60px;
+
+    margin:60px 0;
+
+    flex-wrap:wrap;
+
+}
+
+.flowchart-card{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:flex-start;
+
+    flex:1;
+
+    max-width:420px;
+
+    text-align:center;
+
+}
+
+.flowchart-card h3{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:8px;
+
+    width:100%;
+
+    margin:0 0 20px;
+
+    font-size:28px;
+
+    color:#94422c;
+
+}
+
+.flowchart-card img{
+
+    width:100%;
+
+    max-width:340px;
+
+    height:auto;
+
+    border-radius:20px;
+
+    box-shadow:0 15px 30px rgba(0,0,0,.15);
+
+}
+
+.dark .flowchart-card h3{
+
+    color:#efab87;
+
+}
