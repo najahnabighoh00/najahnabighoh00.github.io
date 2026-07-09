@@ -175,6 +175,10 @@
 
 }
 
+.project-section.prima-section{
+    align-items: flex-start;
+}
+
 .project-section.reverse{
 
     flex-direction:row-reverse;
