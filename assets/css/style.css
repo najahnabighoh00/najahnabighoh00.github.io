@@ -99,3 +99,27 @@
             color:#FBB6CE;
 
         }
+
+.qa-tag {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.4rem 0.8rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #9f4b35;
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(232, 179, 157, 0.35);
+    transition: all 0.3s ease;
+}
+
+.qa-tag:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(159, 75, 53, 0.1);
+}
+
+.dark .qa-tag {
+    color: #e8c4b8;
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.08);
+}

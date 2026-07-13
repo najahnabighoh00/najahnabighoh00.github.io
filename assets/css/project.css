@@ -861,3 +861,34 @@
     color:#efab87;
 
 }
+
+/* ===========================
+   DARK MODE TEXT FIX
+=========================== */
+
+.dark body {
+    color: #f8f1ed;
+}
+
+.dark .project-content p,
+.dark .sub-content p,
+.dark .project-content li,
+.dark .sub-content li {
+    color: #cbd5e1;
+}
+
+.dark .project-content h1,
+.dark .project-content h2,
+.dark .project-content h3,
+.dark .project-content h4,
+.dark .sub-content h1,
+.dark .sub-content h2,
+.dark .sub-content h3,
+.dark .sub-content h4 {
+    color: #f8f1ed;
+}
+
+/* About Project title tetap accent */
+.dark .sub-content h3 {
+    color: #f28b61;
+}
